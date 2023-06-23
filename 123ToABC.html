@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+    function getLetter(num , num2 = 0){
+
+        if(num2>0){
+            var letter = String.fromCharCode(num + 64);
+      var num2 = String.fromCharCode(num2 + 64);
+      var result= letter+","+num2;
+      return result;
+        }
+     else{
+        var letter = String.fromCharCode(num + 64);
+        return letter
+     }
+      
+    }
+    var a =getLetter(21,22)
+    document.write(a);
+    
+  </script>
+</body>
+</html>
